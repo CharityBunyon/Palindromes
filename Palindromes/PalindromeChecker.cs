@@ -8,8 +8,8 @@ namespace Palindromes
     public class PalindromeChecker
     {
         public bool Check(string palindrome, string rev)
-        { 
-            palindrome = Regex.Replace(palindrome, "[^a-zA-Z]", "").ToLower();
+        {
+            palindrome = Regex.Replace(palindrome, "[^a-zA-Z]", "");
             char[] ch = palindrome.ToCharArray();
             Array.Reverse(ch);
 
